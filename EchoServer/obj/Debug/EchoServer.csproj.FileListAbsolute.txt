@@ -1,0 +1,6 @@
+E:\dvlp\DotNet\EchoServer\EchoServer\bin\Debug\EchoServer.exe.config
+E:\dvlp\DotNet\EchoServer\EchoServer\bin\Debug\EchoServer.exe
+E:\dvlp\DotNet\EchoServer\EchoServer\bin\Debug\EchoServer.pdb
+E:\dvlp\DotNet\EchoServer\EchoServer\obj\Debug\EchoServer.csprojResolveAssemblyReference.cache
+E:\dvlp\DotNet\EchoServer\EchoServer\obj\Debug\EchoServer.exe
+E:\dvlp\DotNet\EchoServer\EchoServer\obj\Debug\EchoServer.pdb
