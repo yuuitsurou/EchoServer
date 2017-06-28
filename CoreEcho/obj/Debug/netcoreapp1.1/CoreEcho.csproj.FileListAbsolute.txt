@@ -6,3 +6,11 @@
 /home/ymine/dvlp/DotNetCore/EchoServer/CoreEcho/obj/Debug/netcoreapp1.1/CoreEcho.AssemblyInfo.cs
 /home/ymine/dvlp/DotNetCore/EchoServer/CoreEcho/obj/Debug/netcoreapp1.1/CoreEcho.dll
 /home/ymine/dvlp/DotNetCore/EchoServer/CoreEcho/obj/Debug/netcoreapp1.1/CoreEcho.pdb
+/home/ymine/dvlp/EchoServer/CoreEcho/bin/Debug/netcoreapp1.1/CoreEcho.deps.json
+/home/ymine/dvlp/EchoServer/CoreEcho/bin/Debug/netcoreapp1.1/CoreEcho.runtimeconfig.json
+/home/ymine/dvlp/EchoServer/CoreEcho/bin/Debug/netcoreapp1.1/CoreEcho.runtimeconfig.dev.json
+/home/ymine/dvlp/EchoServer/CoreEcho/bin/Debug/netcoreapp1.1/CoreEcho.dll
+/home/ymine/dvlp/EchoServer/CoreEcho/bin/Debug/netcoreapp1.1/CoreEcho.pdb
+/home/ymine/dvlp/EchoServer/CoreEcho/obj/Debug/netcoreapp1.1/CoreEcho.AssemblyInfo.cs
+/home/ymine/dvlp/EchoServer/CoreEcho/obj/Debug/netcoreapp1.1/CoreEcho.dll
+/home/ymine/dvlp/EchoServer/CoreEcho/obj/Debug/netcoreapp1.1/CoreEcho.pdb
