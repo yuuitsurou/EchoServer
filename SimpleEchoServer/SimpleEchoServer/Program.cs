@@ -77,6 +77,7 @@ namespace SimpleEchoServer
             ms.Close();
             //末尾の\nを削除
             resMsg = resMsg.TrimEnd('\n');
+            resMsg = resMsg.TrimEnd('\r');
             Console.WriteLine(resMsg);
 
             if (!disconnected)
