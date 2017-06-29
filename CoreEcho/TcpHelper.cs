@@ -65,14 +65,20 @@ namespace CoreEcho
                             if (resSize == 0) { break; }
                             // message = Encoding.ASCII.GetString(buffer);
                             message = Encoding.UTF8.GetString(resBytes, 0, resSize);
-                            int index = midasi.BinarySearch(message.Split("\r\n".ToCharArray())[0]);
-                            if (index > -1)
+                            if (!message.StartsWith("quit")) 
                             {
-                                Console.WriteLine(dic[index].Split(' ')[1]);
-                            }
-                            else
-                            {
-                                Console.WriteLine("Not found...");
+                                message = message.TrimEnd('\n');
+                                message = message.TrimEnd('\r');
+                                int index = midasi.BinarySearch(message);
+                                if (index > -1)
+                                {
+                                    data = Encoding.UTF8.GetBytes(dic[index].Split(' ')[1]);
+                                }
+                                else
+                                {
+                                    data = Encoding.UTF8.GetBytes("Not found...");
+                                }
+                                client.GetStream().Write(data, 0, data.Length);
                             }
                         }  
                         Console.WriteLine("Closing connection.");  
