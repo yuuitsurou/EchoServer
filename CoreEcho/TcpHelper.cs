@@ -54,19 +54,18 @@ namespace CoreEcho
                     {  
                         Console.WriteLine("Client connected. Waiting for data.");  
                         var client = clientTask.Result;  
-                        string message = "";  
-   
+                        string message = "";
                         while (message != null && !message.StartsWith("quit"))
                         {  
                             byte[] data = Encoding.ASCII.GetBytes("Send next data: [enter 'quit' to terminate] ");  
                             client.GetStream().Write(data, 0, data.Length);  
 
-                            byte[] buffer = new byte[1024];  
-                            client.GetStream().Read(buffer, 0, buffer.Length);
-   
+                            byte[] resBytes = new byte[1024];  
+                            int resSize = client.GetStream().Read(resBytes, 0, resBytes.Length);
+                            if (resSize == 0) { break; }
                             // message = Encoding.ASCII.GetString(buffer);
-                            message = Encoding.UTF8.GetString(buffer);
-                            int index = midasi.BinarySearch(message);
+                            message = Encoding.UTF8.GetString(resBytes, 0, resSize);
+                            int index = midasi.BinarySearch(message.Split("\r\n".ToCharArray())[0]);
                             if (index > -1)
                             {
                                 Console.WriteLine(dic[index].Split(' ')[1]);
